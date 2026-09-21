@@ -1,7 +1,6 @@
 <div align="center">
   <img src="docs/assets/banner.png" alt="Hermes FTS Banner" width="100%" max-width="700px">
 
-  # Hermes FTS
   High-performance Full-Text Search (FTS) REST API built with Django and PostgreSQL GIN Indexes.
 </div>
 
