@@ -26,8 +26,8 @@ class Command(BaseCommand):
         fast_results = list(Article.objects.filter(search_vector=SearchQuery(query_str))[:50])
         fast_time = (time.perf_counter() - t0) * 1000
 
-        self.stdout.write(f"Sequential Scan: {slow_time:.2f} ms")
-        self.stdout.write(f"GIN Index:     {fast_time:.2f} ms")
+        self.stdout.write(f"Sequential Scan:    {slow_time:.2f} ms")
+        self.stdout.write(f"GIN Index:          {fast_time:.2f} ms")
 
         if fast_time > 0:
             speedup = slow_time / fast_time
