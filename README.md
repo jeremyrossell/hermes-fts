@@ -131,3 +131,6 @@ Execute the automated test suite:
 ```bash
 uv run python manage.py test
 ```
+
+## License
+This project is licensed under [GPLv3](https://github.com/jeremyrossell/hermes-fts/blob/main/LICENSE)
